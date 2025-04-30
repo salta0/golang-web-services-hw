@@ -7,7 +7,7 @@ import (
 )
 
 // запускаем перед основными функциями по разу чтобы файл остался в памяти в файловом кеше
-// io.Discard - это ioutil.Writer который никуда не пишет
+// ioutil.Discard - это ioutil.Writer который никуда не пишет
 func init() {
 	SlowSearch(io.Discard)
 	FastSearch(io.Discard)
