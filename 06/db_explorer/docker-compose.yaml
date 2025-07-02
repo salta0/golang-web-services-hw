@@ -14,5 +14,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "love"
       MYSQL_DATABASE: photolist
+      MYSQL_USER: "coursera"
+      MYSQL_PASSWORD: "password"
     volumes:
       - './_mysql/:/docker-entrypoint-initdb.d/'
