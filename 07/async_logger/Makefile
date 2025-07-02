@@ -16,6 +16,6 @@ test:
 	go test -v -race
 
 check-env:
-ifndef GOBIN
-	$(error GOBIN is undefined, set GOBIN so protoc can see installed plugins in PATH)
-endif
+# ifndef GOBIN
+# 	$(error GOBIN is undefined, set GOBIN so protoc can see installed plugins in PATH)
+# endif
